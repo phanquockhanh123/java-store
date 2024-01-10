@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+
+<!-- Mirrored from portotheme.com/html/porto_ecommerce/demo1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Jan 2024 08:49:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<div th:replace="layout-fe/head"></div>
+
+<body>
+<div class="page-wrapper">
+    <div th:replace="layout-fe/top-notice"></div>
+    <!-- End .top-notice -->
+
+    <div th:replace="layout-fe/header-home"></div>
+
+    <main class="main home">
+        <div class="container mb-2">
+            <div th:replace="layout-fe/intro"></div>
+
+            <div class="row">
+                <div class="col-lg-9">
+                    <div th:replace="layout-fe/banner"></div>
+
+                   <div th:replace="layout-fe/products"></div>
+                    <!-- End .row -->
+
+                    <hr class="mt-1 mb-3 pb-2">
+
+                    <div th:replace="services"></div>
+                    <!-- End .feature-boxes-container -->
+                </div>
+                <!-- End .col-lg-9 -->
+
+                <div class="sidebar-overlay"></div>
+                <div class="sidebar-toggle custom-sidebar-toggle"><i class="fas fa-sliders-h"></i></div>
+                <div th:replace="layout-fe/aside"></div>
+                <!-- End .col-lg-3 -->
+            </div>
+            <!-- End .row -->
+        </div>
+        <!-- End .container -->
+    </main>
+    <!-- End .main -->
+
+    <div th:replace="layout-fe/footer"></div>
+    <!-- End .footer -->
+</div>
+<!-- End .page-wrapper -->
+<div th:replace="layout-fe/settings"></div>
+</body>
+
+
+<!-- Mirrored from portotheme.com/html/porto_ecommerce/demo1.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 10 Jan 2024 08:49:33 GMT -->
+</html>
