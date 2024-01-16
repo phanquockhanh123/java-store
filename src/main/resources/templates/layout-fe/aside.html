@@ -6,18 +6,18 @@
       <ul class="menu menu-vertical sf-arrows">
         <li class="active"><a href="demo1.html"><i class="icon-home"></i>Home</a></li>
         <li>
-          <a href="demo1-shop.html" class="sf-with-ul"><i
+          <a th:href="@{/categories/list}" class="sf-with-ul"><i
                   class="sicon-badge"></i>Categories</a>
           <div class="megamenu megamenu-fixed-width megamenu-3cols">
             <div class="row">
               <div class="col-lg-4">
                 <a href="#" class="nolink pl-0">VARIATION 1</a>
                 <ul class="submenu">
-                  <li><a href="category.html">Fullwidth Banner</a></li>
-                  <li><a href="category-banner-boxed-slider.html">Boxed Slider
+                  <li><a th:href="@{/categories/list}">Fullwidth Banner</a></li>
+                  <li><a th:href="@{/categories/list}">Boxed Slider
                     Banner</a>
                   </li>
-                  <li><a href="category-banner-boxed-image.html">Boxed Image
+                  <li><a th:href="@{/categories/list}">Boxed Image
                     Banner</a>
                   </li>
                   <li><a href="demo1-shop.html">Left Sidebar</a></li>
@@ -68,23 +68,23 @@
           <!-- End .megamenu -->
         </li>
         <li>
-          <a href="demo1-product.html" class="sf-with-ul"><i
+          <a th:href="@{/products/detail}" class="sf-with-ul"><i
                   class="sicon-basket"></i>Products</a>
           <div class="megamenu megamenu-fixed-width">
             <div class="row">
               <div class="col-lg-4">
                 <a href="#" class="nolink pl-0">PRODUCT PAGES</a>
                 <ul class="submenu">
-                  <li><a href="product.html">SIMPLE PRODUCT</a></li>
-                  <li><a href="product-variable.html">VARIABLE PRODUCT</a></li>
-                  <li><a href="product.html">SALE PRODUCT</a></li>
-                  <li><a href="product.html">FEATURED & ON SALE</a></li>
-                  <li><a href="product-custom-tab.html">WITH CUSTOM TAB</a></li>
-                  <li><a href="product-sidebar-left.html">WITH LEFT SIDEBAR</a>
+                  <li><a th:href="@{/products/detail}">SIMPLE PRODUCT</a></li>
+                  <li><a th:href="@{/products/detail}">VARIABLE PRODUCT</a></li>
+                  <li><a th:href="@{/products/detail}">SALE PRODUCT</a></li>
+                  <li><a th:href="@{/products/detail}">FEATURED & ON SALE</a></li>
+                  <li><a th:href="@{/products/detail}">WITH CUSTOM TAB</a></li>
+                  <li><a th:href="@{/products/detail}">WITH LEFT SIDEBAR</a>
                   </li>
-                  <li><a href="product-sidebar-right.html">WITH RIGHT SIDEBAR</a>
+                  <li><a th:href="@{/products/detail}">WITH RIGHT SIDEBAR</a>
                   </li>
-                  <li><a href="product-addcart-sticky.html">ADD CART STICKY</a>
+                  <li><a th:href="@{/products/detail}">ADD CART STICKY</a>
                   </li>
                 </ul>
               </div>
@@ -135,9 +135,9 @@
           <a href="#" class="sf-with-ul"><i class="sicon-envelope"></i>Pages</a>
 
           <ul>
-            <li><a href="wishlist.html">Wishlist</a></li>
-            <li><a href="cart.html">Shopping Cart</a></li>
-            <li><a href="checkout.html">Checkout</a></li>
+            <li><a th:href="@{/wishlist}">Wishlist</a></li>
+            <li><a th:href="@{/cart}">Shopping Cart</a></li>
+            <li><a th:href="@{/checkout}">Checkout</a></li>
             <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="demo1-about.html">About Us</a></li>
             <li><a href="#">Blog</a>
@@ -151,12 +151,9 @@
             <li><a href="forgot-password.html">Forgot Password</a></li>
           </ul>
         </li>
-        <li><a href="blog.html"><i class="sicon-book-open"></i>Blog</a></li>
-        <li><a href="demo1-about.html"><i class="sicon-users"></i>About Us</a></li>
+        <li><a th:href="@{/blog}"><i class="sicon-book-open"></i>Blog</a></li>
+        <li><a th:href="@{/about-us}"><i class="sicon-users"></i>About Us</a></li>
         <li><a href="#"><i class="icon-cat-gift"></i>Special Offer!</a></li>
-        <li><a href="https://1.envato.market/DdLk5" target="_blank"><i
-                class="sicon-star"></i>Buy Porto!<span
-                class="tip tip-hot">Hot</span></a></li>
       </ul>
     </nav>
   </div>
@@ -234,7 +231,7 @@
       <div class="testimonial">
         <div class="testimonial-owner">
           <figure>
-            <img src="assets/images/clients/client-1.jpg" alt="client">
+            <img th:src="@{/fe/images/clients/client-1.jpg}" alt="client">
           </figure>
 
           <div>
@@ -274,7 +271,7 @@
       <div class="testimonial">
         <div class="testimonial-owner">
           <figure>
-            <img src="assets/images/clients/client-3.jpg" alt="client">
+            <img th:src="@{/fe/images/clients/client-3.jpg}" alt="client">
           </figure>
 
           <div>
